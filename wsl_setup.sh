@@ -3,12 +3,12 @@
 ## WSL 2 specific things
 umask 077
 if [ ! -d ~/.ssh ] ; then
-  cp -r /mnt/d/.ssh ~/
+  cp -r /mnt/c/Users/konra_000/.ssh ~/
   chmod 600 ~/.ssh/config
   chmod 400 ~/.ssh/id*
 fi
 
-sudo cp ./snippets/wslconfig /mnt/c/Users/r/.wslconfig
+sudo cp ./snippets/wslconfig /mnt/c/Users/konra_000/wsl_setup/.wslconfig
 sudo cp ./snippets/wsl.conf /etc/wsl.conf
 rm /etc/resolv.conf
 cp ./snippets/resolv.conf /etc/resolv.conf
